@@ -1,7 +1,9 @@
-# BetterLyrics.Plugins.Transliteration.Romaji
+## Credits
 
-This repo is for releases only.
+`Extensions` `Helpers` `Models` `Options` folders are based on the [RomajiConverter.WinUI](https://github.com/xyh20180101/RomajiConverter.WinUI) project (by [xyh20180101](https://github.com/xyh20180101)).
+All credits for those files go to the original author.
 
-Visit https://github.com/jayfunc/BetterLyrics/tree/dev/Plugins/BetterLyrics.Plugins.Transliteration.Romaji to see the source code.
+## Before you build...
 
-You can use the code in the link above to create your own transliteration plugin.
+- Download `unidic-mecab-2.1.2_bin.zip` from https://clrd.ninjal.ac.jp/unidic_archive/cwj/2.1.2/
+- Unzip it and copy the contents of the `dic` folder to `BetterLyrics.Plugins.Transliteration.Romaji`

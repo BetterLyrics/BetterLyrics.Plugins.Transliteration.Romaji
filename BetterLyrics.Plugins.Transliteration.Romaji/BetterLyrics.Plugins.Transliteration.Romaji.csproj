@@ -1,0 +1,109 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<EnableDynamicLoading>true</EnableDynamicLoading>
+		<MeCabUseDefaultDictionary>False</MeCabUseDefaultDictionary>
+		<Description>Convert Japanese to romaji</Description>
+		<Version>1.0.1</Version>
+		<Authors>jayfunc</Authors>
+		<RepositoryUrl>https://github.com/BetterLyrics/BetterLyrics.Plugins.Transliteration.Romaji</RepositoryUrl>
+		<Copyright>Copyright © 2026 jayfunc</Copyright>
+		<Company>$(Authors)</Company>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="customizeDict.txt">
+			<PackagePath>contentFiles\any\any\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\AUTHORS">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\BSD">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\ChangeLog">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\char.bin">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\COPYING">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\dicrc">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\GPL">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\INSTALL">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\LGPL">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\matrix.bin">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\sys.dic">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\unidic-mecab.pdf">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+		<Content Include="unidic\unk.dic">
+			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+			<Pack>true</Pack>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BetterLyrics.Sdk" Version="1.0.0" />
+		<PackageReference Include="MeCab.DotNet" Version="1.2.0" />
+	</ItemGroup>
+
+</Project>

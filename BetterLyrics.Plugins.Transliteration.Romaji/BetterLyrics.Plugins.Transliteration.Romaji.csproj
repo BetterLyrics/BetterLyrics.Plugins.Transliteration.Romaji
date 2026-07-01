@@ -7,101 +7,25 @@
 		<EnableDynamicLoading>true</EnableDynamicLoading>
 		<MeCabUseDefaultDictionary>False</MeCabUseDefaultDictionary>
 		<Description>Convert Japanese to romaji</Description>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<Authors>jayfunc</Authors>
 		<RepositoryUrl>https://github.com/BetterLyrics/BetterLyrics.Plugins.Transliteration.Romaji</RepositoryUrl>
-		<Copyright>Copyright © 2026 jayfunc</Copyright>
+		<Copyright>Copyright © 2026 $(Authors)</Copyright>
 		<Company>$(Authors)</Company>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<BetterLyricsHostDir>D:\Workspace\BetterLyrics</BetterLyricsHostDir>
+	</PropertyGroup>
+
 	<ItemGroup>
-		<Content Include="customizeDict.txt">
-			<PackagePath>contentFiles\any\any\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\AUTHORS">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\BSD">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\ChangeLog">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\char.bin">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\COPYING">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\dicrc">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\GPL">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\INSTALL">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\LGPL">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\matrix.bin">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\sys.dic">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\unidic-mecab.pdf">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
-		<Content Include="unidic\unk.dic">
-			<PackagePath>contentFiles\any\any\unidic\</PackagePath>
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-			<Pack>true</Pack>
-		</Content>
+		<None Update="Langs\*.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="BetterLyrics.DevTools" Version="1.0.1" />
 		<PackageReference Include="BetterLyrics.Sdk" Version="1.0.0" />
 		<PackageReference Include="MeCab.DotNet" Version="1.2.0" />
 	</ItemGroup>
